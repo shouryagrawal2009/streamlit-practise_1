@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 st.title("Kinematics Visualiser")
 
 u=st.sidebar.slider("Initial velocity (m/s)",0,50, 20)
-a=st.sidebar.sider("Acceleartion (m/s2)",0, 20, 10)
+a=st.sidebar.slider("Acceleartion (m/s2)",0, 20, 10)
 
 t= np.linspace(0, 20, 50)
 X= u*t +0.5*a*t**2
